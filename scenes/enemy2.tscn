@@ -1,0 +1,223 @@
+[gd_scene load_steps=36 format=3 uid="uid://cq4pvn6lc4vw"]
+
+[ext_resource type="Script" path="res://scripts/enemy2.gd" id="1_pubu1"]
+[ext_resource type="Texture2D" uid="uid://bie3h8bd7yfwd" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile014.png" id="2_jhrsx"]
+[ext_resource type="Texture2D" uid="uid://0mxqt3onw3jh" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile015.png" id="3_blip0"]
+[ext_resource type="Texture2D" uid="uid://gqgl3qik4grl" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile016.png" id="4_ns22v"]
+[ext_resource type="Texture2D" uid="uid://pw63wytqbsxt" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile017.png" id="5_hkjx6"]
+[ext_resource type="Texture2D" uid="uid://daecwvutm75m4" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile018.png" id="6_oyy32"]
+[ext_resource type="Texture2D" uid="uid://co3gni8tgx61e" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile019.png" id="7_m6t3w"]
+[ext_resource type="Texture2D" uid="uid://c06173yb73500" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile000.png" id="8_8qe1c"]
+[ext_resource type="Texture2D" uid="uid://ln5k78nfpdv7" path="res://assets/Tiny Swords (Update 010)/Effects/Explosion/Explosions.png" id="8_xehsu"]
+[ext_resource type="Texture2D" uid="uid://c504s5pj4we7a" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile001.png" id="9_xbjej"]
+[ext_resource type="Texture2D" uid="uid://b5vdfq8t8motf" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile002.png" id="10_8qi01"]
+[ext_resource type="Texture2D" uid="uid://k4lqucbue1ao" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile003.png" id="11_scgue"]
+[ext_resource type="Texture2D" uid="uid://cy26lr0rovfo1" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile004.png" id="12_x68oa"]
+[ext_resource type="Texture2D" uid="uid://uig30t088rdj" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile005.png" id="13_wvdyo"]
+[ext_resource type="Texture2D" uid="uid://b7pqqdtwjsly5" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile006.png" id="14_i6xes"]
+[ext_resource type="Texture2D" uid="uid://7fcu0cd0m8ud" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile007.png" id="15_8pv74"]
+[ext_resource type="Texture2D" uid="uid://bxfe7afeykcvv" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile008.png" id="16_ykuki"]
+[ext_resource type="Texture2D" uid="uid://b5h4lfquhnk55" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile009.png" id="17_yw7m7"]
+[ext_resource type="Texture2D" uid="uid://bhtp3gawnsdj7" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile010.png" id="18_bmb3f"]
+[ext_resource type="Texture2D" uid="uid://d4822gejnc5k" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile011.png" id="19_3tpw8"]
+[ext_resource type="Texture2D" uid="uid://14s4wmti0c2r" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/tile012.png" id="20_xg6nd"]
+[ext_resource type="AudioStream" uid="uid://bjvdiwr40tcc" path="res://assets/Minifantasy_Dungeon_SFX/17_orc_atk_sword_1.wav" id="21_pumuu"]
+[ext_resource type="AudioStream" uid="uid://b0gwtyxlut4oc" path="res://assets/Minifantasy_Dungeon_SFX/17_orc_atk_sword_2.wav" id="22_pv3rr"]
+[ext_resource type="AudioStream" uid="uid://bxbkccx63dsif" path="res://assets/Minifantasy_Dungeon_SFX/17_orc_atk_sword_3.wav" id="23_plbqf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6vgl"]
+atlas = ExtResource("8_xehsu")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvv43"]
+atlas = ExtResource("8_xehsu")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j10ge"]
+atlas = ExtResource("8_xehsu")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3h1gb"]
+atlas = ExtResource("8_xehsu")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i35do"]
+atlas = ExtResource("8_xehsu")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fpoxh"]
+atlas = ExtResource("8_xehsu")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f8agi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jhrsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_blip0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ns22v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hkjx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_oyy32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_m6t3w")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6vgl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nvv43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j10ge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3h1gb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i35do")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fpoxh")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_8qe1c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xbjej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8qi01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_scgue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_x68oa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_wvdyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_i6xes")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_8pv74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ykuki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_yw7m7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bmb3f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3tpw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_xg6nd")
+}],
+"loop": true,
+"name": &"side walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_omkaq"]
+radius = 56.0089
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0i7ly"]
+radius = 6.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rg1sr"]
+radius = 11.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_6vi13"]
+streams_count = 3
+random_pitch = 1.0
+stream_0/stream = ExtResource("21_pumuu")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("22_pv3rr")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("23_plbqf")
+stream_2/weight = 1.0
+
+[node name="enemy" type="CharacterBody2D"]
+script = ExtResource("1_pubu1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+y_sort_enabled = true
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_f8agi")
+animation = &"death"
+frame_progress = 0.723839
+offset = Vector2(0, -6)
+
+[node name="detection_area" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area"]
+shape = SubResource("CircleShape2D_omkaq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+y_sort_enabled = true
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_0i7ly")
+
+[node name="enemy_hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
+position = Vector2(-1, -2)
+shape = SubResource("CircleShape2D_rg1sr")
+
+[node name="take_damage_cooldown" type="Timer" parent="."]
+
+[node name="healthbar" type="ProgressBar" parent="."]
+modulate = Color(0.105882, 1, 0, 1)
+offset_left = -6.0
+offset_top = 9.0
+offset_right = 124.0
+offset_bottom = 36.0
+scale = Vector2(0.1, 0.1)
+show_percentage = false
+
+[node name="orc hit" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_6vi13")
+pitch_scale = 0.95
+bus = &"character attack"
+
+[node name="death" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
+[connection signal="body_entered" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_entered"]
+[connection signal="body_exited" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_exited"]
+[connection signal="timeout" from="take_damage_cooldown" to="." method="_on_take_damage_cooldown_timeout"]
+[connection signal="timeout" from="death" to="." method="_on_death_timeout"]

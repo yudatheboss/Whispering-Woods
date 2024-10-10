@@ -1,0 +1,85 @@
+[gd_scene load_steps=7 format=3 uid="uid://bvdypusqp4jg5"]
+
+[ext_resource type="Script" path="res://scenes/death.gd" id="1_vs0bh"]
+[ext_resource type="FontFile" uid="uid://cda1d34n84lsg" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="1_xqbr1"]
+[ext_resource type="FontFile" uid="uid://ck7rlktp4bl3i" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="2_aboe0"]
+[ext_resource type="Texture2D" uid="uid://c67fq2akpcgh1" path="res://assets/judaman4_a_death_screen_for_a_forest_2d_pixel_game._the_center__f9c66c17-a39e-448f-bb4a-dfe49b003812.png" id="4_2ku2n"]
+[ext_resource type="AudioStream" uid="uid://ebbwswmwnb32" path="res://assets/WAV/Minimalist1.wav" id="5_fiyid"]
+[ext_resource type="AudioStream" uid="uid://dc5dc6ja5cyaf" path="res://assets/WAV/Retro5.wav" id="6_72m6w"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_vs0bh")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.5
+offset_top = -56.5
+offset_right = 75.5
+offset_bottom = 56.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="you died" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xqbr1")
+text = "you died"
+horizontal_alignment = 1
+
+[node name="empty space label" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xqbr1")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="restart" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_aboe0")
+theme_override_font_sizes/font_size = 16
+text = "restart"
+
+[node name="main menu" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_aboe0")
+text = "main menu
+"
+
+[node name="Judaman4ADeathScreenForAForest2dPixelGame_TheCenterF9c66c17-a39e-448f-bb4a-dfe49b003812" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(0, 70)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_2ku2n")
+
+[node name="button mouse enter" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_fiyid")
+bus = &"ui sounds"
+
+[node name="button_click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_72m6w")
+bus = &"ui sounds"
+
+[connection signal="mouse_entered" from="Control/VBoxContainer/restart" to="." method="_on_restart_mouse_entered"]
+[connection signal="pressed" from="Control/VBoxContainer/restart" to="." method="_on_restart_pressed"]
+[connection signal="mouse_entered" from="Control/VBoxContainer/main menu" to="." method="_on_main_menu_mouse_entered"]
+[connection signal="pressed" from="Control/VBoxContainer/main menu" to="." method="_on_main_menu_pressed"]

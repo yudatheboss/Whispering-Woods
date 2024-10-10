@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bisa2ne4ekhg6"
+path="res://.godot/imported/GRASS - Walk 5.wav-e44d4a40bd6ad3368e9aacf9d40d223e.sample"
+
+[deps]
+
+source_file="res://assets/NA_Character Footsteps (Dirt & Grass) - Pack 1/Walk/Grass/GRASS - Walk 5.wav"
+dest_files=["res://.godot/imported/GRASS - Walk 5.wav-e44d4a40bd6ad3368e9aacf9d40d223e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

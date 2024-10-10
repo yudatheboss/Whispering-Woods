@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://llhqwylages5"
+path="res://.godot/imported/Pixel 5.wav-ab27694e6c8d803efd7e06f06acf74a8.sample"
+
+[deps]
+
+source_file="res://assets/backround music/Pixel Music Pack/Wav/Pixel 5.wav"
+dest_files=["res://.godot/imported/Pixel 5.wav-ab27694e6c8d803efd7e06f06acf74a8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

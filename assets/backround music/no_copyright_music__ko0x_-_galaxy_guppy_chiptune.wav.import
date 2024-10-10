@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cq4ilsp87xwt5"
+path="res://.godot/imported/no_copyright_music__ko0x_-_galaxy_guppy_chiptune.wav-1332f3ce299d80468f816cbe4997815f.sample"
+
+[deps]
+
+source_file="res://assets/backround music/no_copyright_music__ko0x_-_galaxy_guppy_chiptune.wav"
+dest_files=["res://.godot/imported/no_copyright_music__ko0x_-_galaxy_guppy_chiptune.wav-1332f3ce299d80468f816cbe4997815f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://723v5kqs21y5"
+path="res://.godot/imported/17_orc_atk_sword_1.wav-5ad29d2e4fa81d5d466aaa749e32174d.sample"
+
+[deps]
+
+source_file="res://assets/Tiny Swords (Update 010)/Deco/Minifantasy_Dungeon_SFX/17_orc_atk_sword_1.wav"
+dest_files=["res://.godot/imported/17_orc_atk_sword_1.wav-5ad29d2e4fa81d5d466aaa749e32174d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

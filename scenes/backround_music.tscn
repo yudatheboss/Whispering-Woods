@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://bc2wfoiota48k"]
+
+[ext_resource type="Script" path="res://scenes/backround_music.gd" id="1_jchuq"]
+[ext_resource type="AudioStream" uid="uid://cv0irmxa42hr6" path="res://assets/backround music/menu_music.wav" id="2_rweg0"]
+[ext_resource type="AudioStream" uid="uid://c33kny1iq1cp2" path="res://assets/backround music/beachmusi.wav" id="3_0u6pj"]
+[ext_resource type="AudioStream" uid="uid://llhqwylages5" path="res://assets/backround music/Pixel Music Pack/Wav/Pixel 5.wav" id="4_dyqpt"]
+[ext_resource type="AudioStream" uid="uid://bsamy17us01k" path="res://assets/backround music/Pixel Music Pack/Wav/Pixel 1.wav" id="5_r47v2"]
+
+[node name="backround_music" type="Node2D"]
+script = ExtResource("1_jchuq")
+
+[node name="menu_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_rweg0")
+bus = &"backround music"
+
+[node name="cliffside_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_0u6pj")
+bus = &"beach sounds"
+
+[node name="world_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_dyqpt")
+bus = &"backround music"
+
+[node name="world2_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_r47v2")
+bus = &"backround music"

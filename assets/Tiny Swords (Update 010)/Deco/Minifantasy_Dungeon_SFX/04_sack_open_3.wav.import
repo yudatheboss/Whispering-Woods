@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://oknq3x7dgwbo"
+path="res://.godot/imported/04_sack_open_3.wav-16f2f039b983dbb9520f8ee6374b7b78.sample"
+
+[deps]
+
+source_file="res://assets/Tiny Swords (Update 010)/Deco/Minifantasy_Dungeon_SFX/04_sack_open_3.wav"
+dest_files=["res://.godot/imported/04_sack_open_3.wav-16f2f039b983dbb9520f8ee6374b7b78.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
