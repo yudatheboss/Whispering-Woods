@@ -209,7 +209,6 @@ show_percentage = false
 [node name="orc hit" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamRandomizer_6vi13")
 pitch_scale = 0.95
-bus = &"character attack"
 
 [node name="death" type="Timer" parent="."]
 wait_time = 2.0

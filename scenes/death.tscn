@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bvdypusqp4jg5"]
 
-[ext_resource type="Script" path="res://scenes/death.gd" id="1_vs0bh"]
+[ext_resource type="Script" path="res://scripts/death.gd" id="1_t8hoq"]
 [ext_resource type="FontFile" uid="uid://cda1d34n84lsg" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="1_xqbr1"]
 [ext_resource type="FontFile" uid="uid://ck7rlktp4bl3i" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="2_aboe0"]
 [ext_resource type="Texture2D" uid="uid://c67fq2akpcgh1" path="res://assets/judaman4_a_death_screen_for_a_forest_2d_pixel_game._the_center__f9c66c17-a39e-448f-bb4a-dfe49b003812.png" id="4_2ku2n"]
@@ -8,7 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://dc5dc6ja5cyaf" path="res://assets/WAV/Retro5.wav" id="6_72m6w"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_vs0bh")
+script = ExtResource("1_t8hoq")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
@@ -73,11 +73,9 @@ texture = ExtResource("4_2ku2n")
 
 [node name="button mouse enter" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_fiyid")
-bus = &"ui sounds"
 
 [node name="button_click" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_72m6w")
-bus = &"ui sounds"
 
 [connection signal="mouse_entered" from="Control/VBoxContainer/restart" to="." method="_on_restart_mouse_entered"]
 [connection signal="pressed" from="Control/VBoxContainer/restart" to="." method="_on_restart_pressed"]

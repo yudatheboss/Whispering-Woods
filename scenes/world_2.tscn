@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bl8ylpli73m4h"]
 
-[ext_resource type="Script" path="res://scenes/world2.gd" id="1_xrr32"]
+[ext_resource type="Script" path="res://scripts/world2.gd" id="1_tb1b1"]
 [ext_resource type="TileSet" uid="uid://d2qu48x6jo5ct" path="res://assets/stocktileset.tres" id="2_jt4nu"]
 [ext_resource type="TileSet" uid="uid://cjmqnbe00wi4n" path="res://scenes/structures.tres" id="4_yfk00"]
 [ext_resource type="PackedScene" uid="uid://cq4pvn6lc4vw" path="res://scenes/enemy2.tscn" id="5_i53mx"]
@@ -11,7 +11,7 @@ size = Vector2(34, 48)
 
 [node name="world2" type="Node2D"]
 y_sort_enabled = true
-script = ExtResource("1_xrr32")
+script = ExtResource("1_tb1b1")
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1

@@ -75,7 +75,6 @@ layer_1/tile_data = PackedInt32Array(-1966086, 1048583, 3, -1966085, 1048583, 3,
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_08pjt")
-bus = &"beach sounds"
 
 [connection signal="body_entered" from="cliffside_exitpoint" to="." method="_on_cliffside_exitpoint_body_entered"]
 [connection signal="body_exited" from="cliffside_exitpoint" to="." method="_on_cliffside_exitpoint_body_exited"]

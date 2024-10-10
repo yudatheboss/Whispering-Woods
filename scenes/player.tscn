@@ -525,7 +525,6 @@ stream = SubResource("AudioStreamRandomizer_h6shb")
 [node name="walk" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamRandomizer_7ftji")
 pitch_scale = 2.0
-bus = &"footsteps"
 
 [connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
 [connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]
