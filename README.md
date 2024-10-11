@@ -5,6 +5,7 @@ Whispering Woods is an exiting adventure game where you fight off hordes of gobl
 
 
 In order to play the demo, you will need to download Godot and use it to open this folder.
+i will add an .exe file shortly.
 
 
 
